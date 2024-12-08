@@ -81,7 +81,7 @@ We welcome contributions from everyone! Here’s how you can contribute to this 
    git checkout -b feature-xyz
    ```
 
-4. **Make changes**: Implement your changes, whether it's adding new Python code, improving the documentation, or anything else.
+4. **Make  changes**: Implement your changes, whether it's adding new Python code, improving the documentation, or anything else.
 
 5. **Commit changes**: Commit your changes with a meaningful commit message.
 
@@ -97,18 +97,6 @@ We welcome contributions from everyone! Here’s how you can contribute to this 
 
 7. **Create a Pull Request**: Open a pull request from your forked repository to the main repository to propose your changes.
 
-### Code of Conduct
-
-Please make sure to follow the [Code of Conduct](CODE_OF_CONDUCT.md) when contributing to this repository.
-
-## Deployment
-
-This repository is deployed using **GitHub Pages** via MkDocs. The site is automatically built and deployed using GitHub Actions. Whenever changes are pushed to the `main` branch, GitHub Actions will build the site and deploy it to GitHub Pages.
-
-### How to Deploy
-
-1. Push your changes to the `main` branch of the repository.
-2. GitHub Actions will automatically build and deploy the site to GitHub Pages.
 
 You can view the live site here: [Your Site URL](https://sameeralam3127.github.io/Weekly-Python-Code/)
 
