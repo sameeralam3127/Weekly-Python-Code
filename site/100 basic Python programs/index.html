@@ -1,0 +1,1477 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Your resource for Python programs, quizzes, and interview prep.">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+    
+    
+      
+        <title>100 basic Python programs - Weekly Python Code</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Weekly Python Code" class="md-header__button md-logo" aria-label="Weekly Python Code" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Weekly Python Code
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              100 basic Python programs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../programs/" class="md-tabs__link">
+        
+  
+    
+  
+  Programs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quizzes/" class="md-tabs__link">
+        
+  
+    
+  
+  Quizzes
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../interview/" class="md-tabs__link">
+        
+  
+    
+  
+  Interview Prep
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Weekly Python Code" class="md-nav__button md-logo" aria-label="Weekly Python Code" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Weekly Python Code
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quizzes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quizzes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interview Prep
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>100 basic Python programs</h1>
+
+<p>100 basic Python programs:</p>
+<ol>
+<li>Hello World Program</li>
+</ol>
+<pre><code class="language-python">print(&quot;Hello, World!&quot;)
+</code></pre>
+<ol>
+<li>Addition of Two Numbers</li>
+</ol>
+<pre><code class="language-python">num1 = 5
+num2 = 7
+sum = num1 + num2
+print(&quot;Sum:&quot;, sum)
+</code></pre>
+<ol>
+<li>Subtraction of Two Numbers</li>
+</ol>
+<pre><code class="language-python">num1 = 10
+num2 = 4
+difference = num1 - num2
+print(&quot;Difference:&quot;, difference)
+</code></pre>
+<ol>
+<li>Multiplication of Two Numbers</li>
+</ol>
+<pre><code class="language-python">num1 = 3
+num2 = 6
+product = num1 * num2
+print(&quot;Product:&quot;, product)
+</code></pre>
+<ol>
+<li>Division of Two Numbers</li>
+</ol>
+<pre><code class="language-python">num1 = 20
+num2 = 5
+quotient = num1 / num2
+print(&quot;Quotient:&quot;, quotient)
+</code></pre>
+<ol>
+<li>Modulus of Two Numbers</li>
+</ol>
+<pre><code class="language-python">num1 = 15
+num2 = 4
+remainder = num1 % num2
+print(&quot;Remainder:&quot;, remainder)
+</code></pre>
+<ol>
+<li>Exponentiation</li>
+</ol>
+<pre><code class="language-python">base = 2
+exponent = 3
+result = base ** exponent
+print(&quot;Result:&quot;, result)
+</code></pre>
+<ol>
+<li>Square of a Number</li>
+</ol>
+<pre><code class="language-python">num = 4
+square = num ** 2
+print(&quot;Square:&quot;, square)
+</code></pre>
+<ol>
+<li>Cube of a Number</li>
+</ol>
+<pre><code class="language-python">num = 3
+cube = num ** 3
+print(&quot;Cube:&quot;, cube)
+</code></pre>
+<ol>
+<li>Area of a Rectangle</li>
+</ol>
+<pre><code class="language-python">length = 5
+width = 3
+area = length * width
+print(&quot;Area of Rectangle:&quot;, area)
+</code></pre>
+<ol>
+<li>Area of a Circle</li>
+</ol>
+<pre><code class="language-python">radius = 7
+area = 3.14 * (radius ** 2)
+print(&quot;Area of Circle:&quot;, area)
+</code></pre>
+<ol>
+<li>Perimeter of a Rectangle</li>
+</ol>
+<pre><code class="language-python">length = 4
+width = 6
+perimeter = 2 * (length + width)
+print(&quot;Perimeter of Rectangle:&quot;, perimeter)
+</code></pre>
+<ol>
+<li>Perimeter of a Circle</li>
+</ol>
+<pre><code class="language-python">radius = 8
+perimeter = 2 * 3.14 * radius
+print(&quot;Perimeter of Circle:&quot;, perimeter)
+</code></pre>
+<ol>
+<li>Simple Interest</li>
+</ol>
+<pre><code class="language-python">principal = 1000
+rate = 5
+time = 2
+simple_interest = (principal * rate * time) / 100
+print(&quot;Simple Interest:&quot;, simple_interest)
+</code></pre>
+<ol>
+<li>Compound Interest</li>
+</ol>
+<pre><code class="language-python">principal = 1500
+rate = 5
+time = 2
+compound_interest = principal * ((1 + rate / 100) ** time)
+print(&quot;Compound Interest:&quot;, compound_interest)
+</code></pre>
+<ol>
+<li>Check If a Number is Even or Odd</li>
+</ol>
+<pre><code class="language-python">num = 9
+if num % 2 == 0:
+    print(&quot;Even&quot;)
+else:
+    print(&quot;Odd&quot;)
+</code></pre>
+<ol>
+<li>Check If a Number is Positive or Negative</li>
+</ol>
+<pre><code class="language-python">num = -3
+if num &gt;= 0:
+    print(&quot;Positive&quot;)
+else:
+    print(&quot;Negative&quot;)
+</code></pre>
+<ol>
+<li>Check If a Year is a Leap Year</li>
+</ol>
+<pre><code class="language-python">year = 2024
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(&quot;Leap Year&quot;)
+else:
+    print(&quot;Not a Leap Year&quot;)
+</code></pre>
+<ol>
+<li>Find the Largest Among Three Numbers</li>
+</ol>
+<pre><code class="language-python">num1 = 12
+num2 = 18
+num3 = 7
+if num1 &gt;= num2 and num1 &gt;= num3:
+    print(&quot;Largest:&quot;, num1)
+elif num2 &gt;= num1 and num2 &gt;= num3:
+    print(&quot;Largest:&quot;, num2)
+else:
+    print(&quot;Largest:&quot;, num3)
+</code></pre>
+<ol>
+<li>Find the Factorial of a Number</li>
+</ol>
+<pre><code class="language-python">num = 5
+factorial = 1
+for i in range(1, num + 1):
+    factorial *= i
+print(&quot;Factorial:&quot;, factorial)
+</code></pre>
+<ol>
+<li>Find the Fibonacci Series</li>
+</ol>
+<pre><code class="language-python">num = 10
+a, b = 0, 1
+fib_series = [a, b]
+for i in range(2, num):
+    c = a + b
+    a, b = b, c
+    fib_series.append(c)
+print(&quot;Fibonacci Series:&quot;, fib_series)
+</code></pre>
+<ol>
+<li>Check If a Number is Prime</li>
+</ol>
+<pre><code class="language-python">num = 17
+is_prime = True
+if num &gt; 1:
+    for i in range(2, int(num/2) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+if is_prime:
+    print(&quot;Prime&quot;)
+else:
+    print(&quot;Not Prime&quot;)
+</code></pre>
+<ol>
+<li>Find the Prime Numbers in a Range</li>
+</ol>
+<pre><code class="language-python">start = 10
+end = 50
+prime_numbers = []
+for num in range(start, end + 1):
+    if num &gt; 1:
+        for i in range(2, int(num/2) + 1):
+            if num % i == 0:
+                break
+        else:
+            prime_numbers.append(num)
+print(&quot;Prime Numbers:&quot;, prime_numbers)
+</code></pre>
+<ol>
+<li>Reverse a Number</li>
+</ol>
+<pre><code class="language-python">num = 1234
+reverse = 0
+while num &gt; 0:
+    remainder = num % 10
+    reverse = reverse * 10 + remainder
+    num //= 10
+print(&quot;Reverse:&quot;, reverse)
+</code></pre>
+<ol>
+<li>Find the Sum of Digits of a Number</li>
+</ol>
+<pre><code class="language-python">num = 12345
+sum = 0
+while num &gt; 0:
+    digit = num % 10
+    sum += digit
+    num //= 10
+print(&quot;Sum of Digits:&quot;, sum)
+</code></pre>
+<ol>
+<li>Check If a Number is an Armstrong Number</li>
+</ol>
+<pre><code class="language-python">num = 153
+sum = 0
+temp = num
+while temp &gt; 0:
+    digit = temp % 10
+    sum += digit ** 3
+    temp //= 10
+if num == sum:
+    print(&quot;Armstrong Number&quot;)
+else:
+    print(&quot;Not Armstrong Number&quot;)
+</code></pre>
+<ol>
+<li>Find the Armstrong Numbers in a Range</li>
+</ol>
+<pre><code class="language-python">start = 100
+end = 500
+armstrong_numbers = []
+for num in range(start, end + 1):
+    sum = 0
+    temp = num
+    while temp &gt; 0:
+        digit = temp % 10
+        sum += digit ** 3
+        temp //= 10
+    if num == sum:
+        armstrong_numbers.append(num)
+print(&quot;Armstrong Numbers:&quot;, armstrong_numbers)
+</code></pre>
+<ol>
+<li>Find the LCM of Two Numbers</li>
+</ol>
+<pre><code class="language-python">num1 = 12
+num2 = 15
+if num1 &gt; num2:
+    greater = num1
+else:
+    greater = num2
+while True:
+    if greater % num1 == 0 and greater % num2 == 0:
+        lcm = greater
+        break
+    greater += 1
+print(&quot;LCM:&quot;, lcm)
+</code></pre>
+<ol>
+<li>Find the GCD of Two Numbers</li>
+</ol>
+<pre><code class="language-python">num1 = 24
+num2 = 36
+while num2 != 0:
+
+
+ temp = num2
+    num2 = num1 % num2
+    num1 = temp
+gcd = num1
+print(&quot;GCD:&quot;, gcd)
+</code></pre>
+<ol>
+<li>Convert Decimal to Binary</li>
+</ol>
+<pre><code class="language-python">decimal = 10
+binary = &quot;&quot;
+while decimal &gt; 0:
+    binary = str(decimal % 2) + binary
+    decimal //= 2
+print(&quot;Binary:&quot;, binary)
+</code></pre>
+<ol>
+<li>Convert Decimal to Octal</li>
+</ol>
+<pre><code class="language-python">decimal = 20
+octal = &quot;&quot;
+while decimal &gt; 0:
+    octal = str(decimal % 8) + octal
+    decimal //= 8
+print(&quot;Octal:&quot;, octal)
+</code></pre>
+<ol>
+<li>Convert Decimal to Hexadecimal</li>
+</ol>
+<pre><code class="language-python">decimal = 30
+hexadecimal = &quot;&quot;
+while decimal &gt; 0:
+    remainder = decimal % 16
+    if remainder &lt; 10:
+        hexadecimal = str(remainder) + hexadecimal
+    else:
+        hexadecimal = chr(remainder + 55) + hexadecimal
+    decimal //= 16
+print(&quot;Hexadecimal:&quot;, hexadecimal)
+</code></pre>
+<ol>
+<li>Convert Binary to Decimal</li>
+</ol>
+<pre><code class="language-python">binary = &quot;1010&quot;
+decimal = 0
+for i in range(len(binary)):
+    decimal += int(binary[len(binary) - 1 - i]) * (2 ** i)
+print(&quot;Decimal:&quot;, decimal)
+</code></pre>
+<ol>
+<li>Convert Binary to Octal</li>
+</ol>
+<pre><code class="language-python">binary = &quot;1010&quot;
+decimal = 0
+for i in range(len(binary)):
+    decimal += int(binary[len(binary) - 1 - i]) * (2 ** i)
+octal = &quot;&quot;
+while decimal &gt; 0:
+    octal = str(decimal % 8) + octal
+    decimal //= 8
+print(&quot;Octal:&quot;, octal)
+</code></pre>
+<ol>
+<li>Convert Binary to Hexadecimal</li>
+</ol>
+<pre><code class="language-python">binary = &quot;1010&quot;
+decimal = 0
+for i in range(len(binary)):
+    decimal += int(binary[len(binary) - 1 - i]) * (2 ** i)
+hexadecimal = &quot;&quot;
+while decimal &gt; 0:
+    remainder = decimal % 16
+    if remainder &lt; 10:
+        hexadecimal = str(remainder) + hexadecimal
+    else:
+        hexadecimal = chr(remainder + 55) + hexadecimal
+    decimal //= 16
+print(&quot;Hexadecimal:&quot;, hexadecimal)
+</code></pre>
+<ol>
+<li>Convert Octal to Decimal</li>
+</ol>
+<pre><code class="language-python">octal = &quot;24&quot;
+decimal = 0
+for i in range(len(octal)):
+    decimal += int(octal[len(octal) - 1 - i]) * (8 ** i)
+print(&quot;Decimal:&quot;, decimal)
+</code></pre>
+<ol>
+<li>Convert Octal to Binary</li>
+</ol>
+<pre><code class="language-python">octal = &quot;24&quot;
+decimal = 0
+for i in range(len(octal)):
+    decimal += int(octal[len(octal) - 1 - i]) * (8 ** i)
+binary = &quot;&quot;
+while decimal &gt; 0:
+    binary = str(decimal % 2) + binary
+    decimal //= 2
+print(&quot;Binary:&quot;, binary)
+</code></pre>
+<ol>
+<li>Convert Octal to Hexadecimal</li>
+</ol>
+<pre><code class="language-python">octal = &quot;24&quot;
+decimal = 0
+for i in range(len(octal)):
+    decimal += int(octal[len(octal) - 1 - i]) * (8 ** i)
+hexadecimal = &quot;&quot;
+while decimal &gt; 0:
+    remainder = decimal % 16
+    if remainder &lt; 10:
+        hexadecimal = str(remainder) + hexadecimal
+    else:
+        hexadecimal = chr(remainder + 55) + hexadecimal
+    decimal //= 16
+print(&quot;Hexadecimal:&quot;, hexadecimal)
+</code></pre>
+<ol>
+<li>Convert Hexadecimal to Decimal</li>
+</ol>
+<pre><code class="language-python">hexadecimal = &quot;1E&quot;
+decimal = 0
+for i in range(len(hexadecimal)):
+    if hexadecimal[i].isdigit():
+        decimal += int(hexadecimal[i]) * (16 ** (len(hexadecimal) - 1 - i))
+    else:
+        decimal += (ord(hexadecimal[i].upper()) - 55) * (16 ** (len(hexadecimal) - 1 - i))
+print(&quot;Decimal:&quot;, decimal)
+</code></pre>
+<ol>
+<li>Convert Hexadecimal to Binary</li>
+</ol>
+<pre><code class="language-python">hexadecimal = &quot;1E&quot;
+decimal = 0
+for i in range(len(hexadecimal)):
+    if hexadecimal[i].isdigit():
+        decimal += int(hexadecimal[i]) * (16 ** (len(hexadecimal) - 1 - i))
+    else:
+        decimal += (ord(hexadecimal[i].upper()) - 55) * (16 ** (len(hexadecimal) - 1 - i))
+binary = &quot;&quot;
+while decimal &gt; 0:
+    binary = str(decimal % 2) + binary
+    decimal //= 2
+print(&quot;Binary:&quot;, binary)
+</code></pre>
+<ol>
+<li>Convert Hexadecimal to Octal</li>
+</ol>
+<pre><code class="language-python">hexadecimal = &quot;1E&quot;
+decimal = 0
+for i in range(len(hexadecimal)):
+    if hexadecimal[i].isdigit():
+        decimal += int(hexadecimal[i]) * (16 ** (len(hexadecimal) - 1 - i))
+    else:
+        decimal += (ord(hexadecimal[i].upper()) - 55) * (16 ** (len(hexadecimal) - 1 - i))
+octal = &quot;&quot;
+while decimal &gt; 0:
+    octal = str(decimal % 8) + octal
+    decimal //= 8
+print(&quot;Octal:&quot;, octal)
+</code></pre>
+<ol>
+<li>Check If a String is Palindrome</li>
+</ol>
+<pre><code class="language-python">string = &quot;radar&quot;
+if string == string[::-1]:
+    print(&quot;Palindrome&quot;)
+else:
+    print(&quot;Not Palindrome&quot;)
+</code></pre>
+<ol>
+<li>Count the Number of Vowels in a String</li>
+</ol>
+<pre><code class="language-python">string = &quot;hello&quot;
+vowels = &quot;aeiouAEIOU&quot;
+count = 0
+for char in string:
+    if char in vowels:
+        count += 1
+print(&quot;Number of Vowels:&quot;, count)
+</code></pre>
+<ol>
+<li>Count the Number of Words in a String</li>
+</ol>
+<pre><code class="language-python">string = &quot;Hello, how are you?&quot;
+words = string.split()
+print(&quot;Number of Words:&quot;, len(words))
+</code></pre>
+<ol>
+<li>Reverse a String</li>
+</ol>
+<pre><code class="language-python">string = &quot;hello&quot;
+reverse = string[::-1]
+print(&quot;Reverse:&quot;, reverse)
+</code></pre>
+<ol>
+<li>Capitalize the First Letter of Each Word in a String</li>
+</ol>
+<pre><code class="language-python">string = &quot;hello world&quot;
+capitalized = string.title()
+print(&quot;Capitalized:&quot;, capitalized)
+</code></pre>
+<ol>
+<li>Remove Punctuation from a String</li>
+</ol>
+<pre><code class="language-python">string = &quot;Hello, World!&quot;
+punctuation = '''!()-[]{};:'&quot;\,&lt;&gt;./?@#$%^&amp;*_~'''
+no_punctuation = &quot;&quot;
+for char in string:
+    if char not in punctuation:
+        no_punctuation += char
+print(&quot;No Punctuation:&quot;, no_punctuation)
+</code></pre>
+<ol>
+<li>Find the Longest Word in a String</li>
+</ol>
+<pre><code class="language-python">string = &quot;Hello world, how are you?&quot;
+words = string.split()
+longest_word = max(words, key=len)
+print(&quot;Longest Word:&quot;, longest_word)
+</code></pre>
+<ol>
+<li>Count the Number of Occurrences of a Character in a String</li>
+</ol>
+<pre><code class="language-python">string = &quot;hello world&quot;
+char = 'l'
+count = string.count(char)
+print(&quot;Occurrences of '{}' : {}&quot;.format(char, count))
+</code></pre>
+<ol>
+<li>Concatenate Two Strings</li>
+</ol>
+<pre><code class="language-python">string1 = &quot;Hello&quot;
+string2 = &quot;World&quot;
+concatenated = string1 + &quot; &quot; +
+
+ string2
+print(&quot;Concatenated:&quot;, concatenated)
+</code></pre>
+<ol>
+<li>Check If Two Strings are Anagrams</li>
+</ol>
+<pre><code class="language-python">string1 = &quot;listen&quot;
+string2 = &quot;silent&quot;
+if sorted(string1) == sorted(string2):
+    print(&quot;Anagrams&quot;)
+else:
+    print(&quot;Not Anagrams&quot;)
+</code></pre>
+<ol>
+<li>Find the ASCII Value of a Character</li>
+</ol>
+<pre><code class="language-python">char = 'A'
+ascii_value = ord(char)
+print(&quot;ASCII Value:&quot;, ascii_value)
+</code></pre>
+<ol>
+<li>Find the Character from an ASCII Value</li>
+</ol>
+<pre><code class="language-python">ascii_value = 65
+char = chr(ascii_value)
+print(&quot;Character:&quot;, char)
+</code></pre>
+<ol>
+<li>Remove Spaces from a String</li>
+</ol>
+<pre><code class="language-python">string = &quot;Hello world&quot;
+no_spaces = string.replace(&quot; &quot;, &quot;&quot;)
+print(&quot;No Spaces:&quot;, no_spaces)
+</code></pre>
+<ol>
+<li>Convert Lowercase to Uppercase</li>
+</ol>
+<pre><code class="language-python">string = &quot;hello&quot;
+uppercase = string.upper()
+print(&quot;Uppercase:&quot;, uppercase)
+</code></pre>
+<ol>
+<li>Convert Uppercase to Lowercase</li>
+</ol>
+<pre><code class="language-python">string = &quot;HELLO&quot;
+lowercase = string.lower()
+print(&quot;Lowercase:&quot;, lowercase)
+</code></pre>
+<ol>
+<li>Find the Smallest Among Three Numbers</li>
+</ol>
+<pre><code class="language-python">num1 = 10
+num2 = 7
+num3 = 13
+if num1 &lt;= num2 and num1 &lt;= num3:
+    print(&quot;Smallest:&quot;, num1)
+elif num2 &lt;= num1 and num2 &lt;= num3:
+    print(&quot;Smallest:&quot;, num2)
+else:
+    print(&quot;Smallest:&quot;, num3)
+</code></pre>
+<ol>
+<li>Swap Two Numbers</li>
+</ol>
+<pre><code class="language-python">num1 = 5
+num2 = 8
+num1, num2 = num2, num1
+print(&quot;Swapped Numbers:&quot;, num1, num2)
+</code></pre>
+<ol>
+<li>Find the Sum of Natural Numbers</li>
+</ol>
+<pre><code class="language-python">n = 10
+sum = n * (n + 1) // 2
+print(&quot;Sum of Natural Numbers:&quot;, sum)
+</code></pre>
+<ol>
+<li>Find the Sum of Natural Numbers using Loop</li>
+</ol>
+<pre><code class="language-python">n = 10
+sum = 0
+for i in range(1, n + 1):
+    sum += i
+print(&quot;Sum of Natural Numbers:&quot;, sum)
+</code></pre>
+<ol>
+<li>Find the Sum of Squares of Natural Numbers</li>
+</ol>
+<pre><code class="language-python">n = 5
+sum = n * (n + 1) * (2 * n + 1) // 6
+print(&quot;Sum of Squares of Natural Numbers:&quot;, sum)
+</code></pre>
+<ol>
+<li>Find the Sum of Squares of Natural Numbers using Loop</li>
+</ol>
+<pre><code class="language-python">n = 5
+sum = 0
+for i in range(1, n + 1):
+    sum += i ** 2
+print(&quot;Sum of Squares of Natural Numbers:&quot;, sum)
+</code></pre>
+<ol>
+<li>Find the Sum of Cubes of Natural Numbers</li>
+</ol>
+<pre><code class="language-python">n = 4
+sum = (n * (n + 1) // 2) ** 2
+print(&quot;Sum of Cubes of Natural Numbers:&quot;, sum)
+</code></pre>
+<ol>
+<li>Find the Sum of Cubes of Natural Numbers using Loop</li>
+</ol>
+<pre><code class="language-python">n = 4
+sum = 0
+for i in range(1, n + 1):
+    sum += i ** 3
+print(&quot;Sum of Cubes of Natural Numbers:&quot;, sum)
+</code></pre>
+<ol>
+<li>Find the Area of a Triangle</li>
+</ol>
+<pre><code class="language-python">base = 6
+height = 4
+area = 0.5 * base * height
+print(&quot;Area of Triangle:&quot;, area)
+</code></pre>
+<ol>
+<li>Check If a Triangle is Equilateral, Isosceles, or Scalene</li>
+</ol>
+<pre><code class="language-python">side1 = 5
+side2 = 5
+side3 = 5
+if side1 == side2 == side3:
+    print(&quot;Equilateral&quot;)
+elif side1 == side2 or side2 == side3 or side3 == side1:
+    print(&quot;Isosceles&quot;)
+else:
+    print(&quot;Scalene&quot;)
+</code></pre>
+<ol>
+<li>Check If a Number is Perfect</li>
+</ol>
+<pre><code class="language-python">num = 28
+sum = 0
+for i in range(1, num):
+    if num % i == 0:
+        sum += i
+if sum == num:
+    print(&quot;Perfect&quot;)
+else:
+    print(&quot;Not Perfect&quot;)
+</code></pre>
+<ol>
+<li>Check If a Number is Abundant</li>
+</ol>
+<pre><code class="language-python">num = 12
+sum = 0
+for i in range(1, num):
+    if num % i == 0:
+        sum += i
+if sum &gt; num:
+    print(&quot;Abundant&quot;)
+else:
+    print(&quot;Not Abundant&quot;)
+</code></pre>
+<ol>
+<li>Check If a Number is Deficient</li>
+</ol>
+<pre><code class="language-python">num = 15
+sum = 0
+for i in range(1, num):
+    if num % i == 0:
+        sum += i
+if sum &lt; num:
+    print(&quot;Deficient&quot;)
+else:
+    print(&quot;Not Deficient&quot;)
+</code></pre>
+<ol>
+<li>Find the Sum of Factors of a Number</li>
+</ol>
+<pre><code class="language-python">num = 20
+sum = 0
+for i in range(1, num + 1):
+    if num % i == 0:
+        sum += i
+print(&quot;Sum of Factors:&quot;, sum)
+</code></pre>
+<ol>
+<li>Find the Product of Factors of a Number</li>
+</ol>
+<pre><code class="language-python">num = 30
+product = 1
+for i in range(1, num + 1):
+    if num % i == 0:
+        product *= i
+print(&quot;Product of Factors:&quot;, product)
+</code></pre>
+<ol>
+<li>Check If a Number is Prime or Composite</li>
+</ol>
+<pre><code class="language-python">num = 11
+if num &gt; 1:
+    for i in range(2, int(num/2) + 1):
+        if num % i == 0:
+            print(&quot;Composite&quot;)
+            break
+    else:
+        print(&quot;Prime&quot;)
+else:
+    print(&quot;Composite&quot;)
+</code></pre>
+<ol>
+<li>Find the Prime Factors of a Number</li>
+</ol>
+<pre><code class="language-python">num = 24
+prime_factors = []
+for i in range(2, num + 1):
+    while num % i == 0:
+        prime_factors.append(i)
+        num //= i
+print(&quot;Prime Factors:&quot;, prime_factors)
+</code></pre>
+<ol>
+<li>Find the Sum of First n Natural Numbers</li>
+</ol>
+<pre><code class="language-python">n = 10
+sum = n * (n + 1) // 2
+print(&quot;Sum of First {} Natural Numbers:&quot;.format(n), sum)
+</code></pre>
+<ol>
+<li>Find the Sum of First n Natural Numbers using Loop</li>
+</ol>
+<pre><code class="language-python">n = 10
+sum = 0
+for i in range(1, n + 1):
+    sum += i
+print(&quot;Sum of First {} Natural Numbers:&quot;.format(n), sum)
+</code></pre>
+<ol>
+<li>Check If a Number is a Perfect Square</li>
+</ol>
+<pre><code class="language-python">num = 16
+if num &gt;= 0 and int(num ** 0.5) ** 2 == num:
+    print(&quot;Perfect Square&quot;)
+else:
+    print(&quot;Not Perfect Square&quot;)
+</code></pre>
+<ol>
+<li>Find the Square Root of a Number</li>
+</ol>
+<pre><code class="language-python">num = 25
+square_root = num ** 0.5
+print(&quot;Square Root:&quot;, square_root)
+</code></pre>
+<ol>
+<li>Find the Cube Root of a Number</li>
+</ol>
+<pre><code class="language-python">num = 64
+cube_root = num ** (1/3)
+print(&quot;Cube Root:&quot;, cube
+
+_root)
+</code></pre>
+<ol>
+<li>Find the Smallest Element in a List</li>
+</ol>
+<pre><code class="language-python">numbers = [5, 2, 8, 1, 9]
+smallest = min(numbers)
+print(&quot;Smallest Element:&quot;, smallest)
+</code></pre>
+<ol>
+<li>Find the Largest Element in a List</li>
+</ol>
+<pre><code class="language-python">numbers = [5, 2, 8, 1, 9]
+largest = max(numbers)
+print(&quot;Largest Element:&quot;, largest)
+</code></pre>
+<ol>
+<li>Find the Second Largest Element in a List</li>
+</ol>
+<pre><code class="language-python">numbers = [5, 2, 8, 1, 9]
+sorted_numbers = sorted(numbers)
+second_largest = sorted_numbers[-2]
+print(&quot;Second Largest Element:&quot;, second_largest)
+</code></pre>
+<ol>
+<li>Find the Sum of Elements in a List</li>
+</ol>
+<pre><code class="language-python">numbers = [5, 2, 8, 1, 9]
+sum = 0
+for num in numbers:
+    sum += num
+print(&quot;Sum of Elements:&quot;, sum)
+</code></pre>
+<ol>
+<li>Find the Average of Elements in a List</li>
+</ol>
+<pre><code class="language-python">numbers = [5, 2, 8, 1, 9]
+average = sum(numbers) / len(numbers)
+print(&quot;Average of Elements:&quot;, average)
+</code></pre>
+<ol>
+<li>Count the Number of Even and Odd Numbers in a List</li>
+</ol>
+<pre><code class="language-python">numbers = [5, 2, 8, 1, 9]
+even_count = 0
+odd_count = 0
+for num in numbers:
+    if num % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+print(&quot;Even Count:&quot;, even_count)
+print(&quot;Odd Count:&quot;, odd_count)
+</code></pre>
+<ol>
+<li>Remove Duplicate Elements from a List</li>
+</ol>
+<pre><code class="language-python">numbers = [5, 2, 8, 5, 1, 9, 2]
+unique_numbers = list(set(numbers))
+print(&quot;Unique Elements:&quot;, unique_numbers)
+</code></pre>
+<ol>
+<li>Check If a List is Empty</li>
+</ol>
+<pre><code class="language-python">numbers = []
+if not numbers:
+    print(&quot;List is Empty&quot;)
+else:
+    print(&quot;List is Not Empty&quot;)
+</code></pre>
+<ol>
+<li>Reverse a List</li>
+</ol>
+<pre><code class="language-python">numbers = [5, 2, 8, 1, 9]
+reversed_numbers = numbers[::-1]
+print(&quot;Reversed List:&quot;, reversed_numbers)
+</code></pre>
+<ol>
+<li>Concatenate Two Lists</li>
+</ol>
+<pre><code class="language-python">list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+concatenated_list = list1 + list2
+print(&quot;Concatenated List:&quot;, concatenated_list)
+</code></pre>
+<ol>
+<li>Find the Union of Two Lists</li>
+</ol>
+<pre><code class="language-python">list1 = [1, 2, 3]
+list2 = [3, 4, 5]
+union_list = list(set(list1 + list2))
+print(&quot;Union of Lists:&quot;, union_list)
+</code></pre>
+<ol>
+<li>Find the Intersection of Two Lists</li>
+</ol>
+<pre><code class="language-python">list1 = [1, 2, 3, 4, 5]
+list2 = [3, 4, 5, 6, 7]
+intersection_list = list(set(list1) &amp; set(list2))
+print(&quot;Intersection of Lists:&quot;, intersection_list)
+</code></pre>
+<ol>
+<li>Find the Difference Between Two Lists</li>
+</ol>
+<pre><code class="language-python">list1 = [1, 2, 3, 4, 5]
+list2 = [3, 4, 5, 6, 7]
+difference_list = list(set(list1) - set(list2))
+print(&quot;Difference Between Lists:&quot;, difference_list)
+</code></pre>
+<ol>
+<li>Check If a List is Palindrome</li>
+</ol>
+<pre><code class="language-python">numbers = [1, 2, 3, 2, 1]
+if numbers == numbers[::-1]:
+    print(&quot;Palindrome&quot;)
+else:
+    print(&quot;Not Palindrome&quot;)
+</code></pre>
+<ol>
+<li>Check If a List is Sorted</li>
+</ol>
+<pre><code class="language-python">numbers = [1, 2, 3, 4, 5]
+if numbers == sorted(numbers):
+    print(&quot;Sorted&quot;)
+else:
+    print(&quot;Not Sorted&quot;)
+</code></pre>
+<ol>
+<li>Bubble Sort</li>
+</ol>
+<pre><code class="language-python">numbers = [64, 25, 12, 22, 11]
+for i in range(len(numbers)):
+    for j in range(len(numbers) - 1):
+        if numbers[j] &gt; numbers[j + 1]:
+            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+print(&quot;Sorted List:&quot;, numbers)
+</code></pre>
+<ol>
+<li>Selection Sort</li>
+</ol>
+<pre><code class="language-python">numbers = [64, 25, 12, 22, 11]
+for i in range(len(numbers)):
+    min_index = i
+    for j in range(i + 1, len(numbers)):
+        if numbers[j] &lt; numbers[min_index]:
+            min_index = j
+    numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
+print(&quot;Sorted List:&quot;, numbers)
+</code></pre>
+<ol>
+<li>Insertion Sort</li>
+</ol>
+<pre><code class="language-python">numbers = [64, 25, 12, 22, 11]
+for i in range(1, len(numbers)):
+    key = numbers[i]
+    j = i - 1
+    while j &gt;= 0 and key &lt; numbers[j]:
+        numbers[j + 1] = numbers[j]
+        j -= 1
+    numbers[j + 1] = key
+print(&quot;Sorted List:&quot;, numbers)
+</code></pre>
+<ol>
+<li>Linear Search</li>
+</ol>
+<pre><code class="language-python">numbers = [64, 25, 12, 22, 11]
+target = 12
+found = False
+for i in range(len(numbers)):
+    if numbers[i] == target:
+        print(&quot;Element found at index:&quot;, i)
+        found = True
+        break
+if not found:
+    print(&quot;Element not found&quot;)
+</code></pre>
+<ol>
+<li>Binary Search</li>
+</ol>
+<pre><code class="language-python">def binary_search(arr, target):
+    left = 0
+    right = len(arr) - 1
+    while left &lt;= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] &lt; target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
+
+numbers = [11, 12, 22, 25, 64]
+target = 12
+result = binary_search(numbers, target)
+if result != -1:
+    print(&quot;Element found at index:&quot;, result)
+else:
+    print(&quot;Element not found&quot;)
+</code></pre>
+<ol>
+<li>Merge Sort</li>
+</ol>
+<pre><code class="language-python">def merge_sort(arr):
+    if len(arr) &gt; 1:
+        mid = len(arr) // 2
+        left_half = arr[:mid]
+        right_half = arr[mid:]
+
+        merge_sort(left_half)
+        merge_sort(right_half)
+
+        i = j = k = 0
+
+        while i &lt; len(left_half) and j &lt; len(right_half):
+            if left_half[i] &lt; right_half[j]:
+                arr[k] = left_half[i]
+                i += 1
+            else:
+                arr[k] = right_half[j]
+                j += 1
+            k += 1
+
+        while i &lt; len(left_half):
+            arr[k] = left_half[i]
+            i += 1
+            k += 1
+
+        while j &lt; len(right_half):
+            arr[k] = right
+
+_half[j]
+            j += 1
+            k += 1
+
+numbers = [64, 25, 12, 22, 11]
+merge_sort(numbers)
+print(&quot;Sorted List:&quot;, numbers)
+</code></pre>
+<ol>
+<li>Quick Sort</li>
+</ol>
+<pre><code class="language-python">def partition(arr, low, high):
+    pivot = arr[high]
+    i = low - 1
+    for j in range(low, high):
+        if arr[j] &lt; pivot:
+            i += 1
+            arr[i], arr[j] = arr[j], arr[i]
+    arr[i + 1], arr[high] = arr[high], arr[i + 1]
+    return i + 1
+
+def quick_sort(arr, low, high):
+    if low &lt; high:
+        pi = partition(arr, low, high)
+        quick_sort(arr, low, pi - 1)
+        quick_sort(arr, pi + 1, high)
+
+numbers = [64, 25, 12, 22, 11]
+quick_sort(numbers, 0, len(numbers) - 1)
+print(&quot;Sorted List:&quot;, numbers)
+</code></pre>
+<p>These are basic Python programs covering various concepts such as arithmetic operations, conditionals, loops, functions, and data structures like lists.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc", "navigation.tabs"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1245 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Your resource for Python programs, quizzes, and interview prep.">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+    
+    
+      
+        <title>Python code demonstrating all types of loops: - Weekly Python Code</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python-code-demonstrating-all-types-of-loops" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Weekly Python Code" class="md-header__button md-logo" aria-label="Weekly Python Code" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Weekly Python Code
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python code demonstrating all types of loops:
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../programs/" class="md-tabs__link">
+        
+  
+    
+  
+  Programs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quizzes/" class="md-tabs__link">
+        
+  
+    
+  
+  Quizzes
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../interview/" class="md-tabs__link">
+        
+  
+    
+  
+  Interview Prep
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Weekly Python Code" class="md-nav__button md-logo" aria-label="Weekly Python Code" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Weekly Python Code
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quizzes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quizzes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interview Prep
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="python-code-demonstrating-all-types-of-loops">Python code demonstrating all types of loops:</h1>
+<p>For Loop: A loop that iterates over a sequence (like a list, tuple, dictionary, string, or range).</p>
+<p>While Loop: A loop that continues to execute as long as the condition is true.</p>
+<p>Nested Loops: Loops within loops.</p>
+<p>Loop with Else: A loop with an else block that executes after the loop completes normally (without a break).</p>
+<h1 id="for-loop-to-iterate-over-a-list">For loop to iterate over a list</h1>
+<pre><code>numbers = [1, 2, 3, 4, 5]
+for number in numbers:
+    print(f&quot;For loop, number: {number}&quot;)
+
+
+</code></pre>
+<h1 id="for-loop-to-iterate-over-a-dictionary">For loop to iterate over a dictionary</h1>
+<pre><code>person = {&quot;name&quot;: &quot;Alice&quot;, &quot;age&quot;: 30, &quot;city&quot;: &quot;New York&quot;}
+for key, value in person.items():
+    print(f&quot;For loop, key: {key}, value: {value}&quot;)
+
+
+</code></pre>
+<h1 id="for-loop-to-iterate-over-a-string">For loop to iterate over a string</h1>
+<pre><code>message = &quot;Hello&quot;
+for char in message:
+    print(f&quot;For loop, char: {char}&quot;)
+
+
+</code></pre>
+<h1 id="for-loop-with-range">For loop with range</h1>
+<pre><code>for i in range(5):
+    print(f&quot;For loop with range, i: {i}&quot;)
+
+
+</code></pre>
+<h1 id="while-loop">While loop</h1>
+<pre><code>count = 0
+while count &lt; 5:
+    print(f&quot;While loop, count: {count}&quot;)
+    count += 1
+
+
+</code></pre>
+<h1 id="nested-loops">Nested loops</h1>
+<pre><code>for i in range(3):
+    for j in range(3):
+        print(f&quot;Nested loop, i: {i}, j: {j}&quot;)
+
+</code></pre>
+<h1 id="loop-with-else">Loop with else</h1>
+<pre><code>for i in range(3):
+    print(f&quot;Loop with else, i: {i}&quot;)
+else:
+    print(&quot;Loop with else completed&quot;)
+
+
+</code></pre>
+<h1 id="while-loop-with-else">While loop with else</h1>
+<pre><code>count = 0
+while count &lt; 3:
+    print(f&quot;While loop with else, count: {count}&quot;)
+    count += 1
+else:
+    print(&quot;While loop with else completed&quot;)
+
+
+</code></pre>
+<h1 id="break-in-a-loop">Break in a loop</h1>
+<pre><code>for i in range(5):
+    if i == 3:
+        print(f&quot;Break in loop, breaking at i: {i}&quot;)
+        break
+    print(f&quot;Break in loop, i: {i}&quot;)
+
+
+</code></pre>
+<h1 id="continue-in-a-loop">Continue in a loop</h1>
+<pre><code>for i in range(5):
+    if i == 3:
+        print(f&quot;Continue in loop, continuing at i: {i}&quot;)
+        continue
+    print(f&quot;Continue in loop, i: {i}&quot;)
+
+
+</code></pre>
+<h1 id="loop-over-a-list-with-indices">Loop over a list with indices</h1>
+<pre><code>fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+for index, fruit in enumerate(fruits):
+    print(f&quot;Loop with enumerate, index: {index}, fruit: {fruit}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-zip">Loop with zip</h1>
+<pre><code>names = [&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;]
+ages = [25, 30, 35]
+for name, age in zip(names, ages):
+    print(f&quot;Loop with zip, name: {name}, age: {age}&quot;)
+
+
+</code></pre>
+<h1 id="infinite-loop-commented-out-to-prevent-execution-hang">Infinite loop (commented out to prevent execution hang)</h1>
+<pre><code> while True:
+
+print(&quot;Infinite loop&quot;)
+</code></pre>
+<h1 id="nested-loop-with-break">Nested loop with break</h1>
+<pre><code>for i in range(3):
+    for j in range(3):
+        if j == 1:
+            print(f&quot;Nested loop with break, breaking inner loop at j: {j}&quot;)
+            break
+        print(f&quot;Nested loop with break, i: {i}, j: {j}&quot;)
+
+
+</code></pre>
+<h1 id="nested-loop-with-continue">Nested loop with continue</h1>
+<pre><code>for i in range(3):
+    for j in range(3):
+        if j == 1:
+            print(f&quot;Nested loop with continue, continuing inner loop at j: {j}&quot;)
+            continue
+        print(f&quot;Nested loop with continue, i: {i}, j: {j}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-pass">Loop with pass</h1>
+<pre><code>for i in range(5):
+    if i == 3:
+        print(f&quot;Loop with pass, pass at i: {i}&quot;)
+        pass
+    print(f&quot;Loop with pass, i: {i}&quot;)
+
+
+</code></pre>
+<h1 id="using-loops-to-create-a-list-list-comprehension">Using loops to create a list (list comprehension)</h1>
+<pre><code>squares = [x ** 2 for x in range(5)]
+print(f&quot;List comprehension, squares: {squares}&quot;)
+
+
+</code></pre>
+<h1 id="using-loops-to-create-a-dictionary-dictionary-comprehension">Using loops to create a dictionary (dictionary comprehension)</h1>
+<pre><code>squares_dict = {x: x ** 2 for x in range(5)}
+print(f&quot;Dictionary comprehension, squares_dict: {squares_dict}&quot;)
+
+
+</code></pre>
+<h1 id="while-loop-with-a-break">While loop with a break</h1>
+<pre><code>count = 0
+while True:
+    print(f&quot;While loop with break, count: {count}&quot;)
+    count += 1
+    if count == 3:
+        break
+
+
+</code></pre>
+<h1 id="while-loop-with-a-continue">While loop with a continue</h1>
+<pre><code>count = 0
+while count &lt; 5:
+    count += 1
+    if count == 3:
+        print(f&quot;While loop with continue, continuing at count: {count}&quot;)
+        continue
+    print(f&quot;While loop with continue, count: {count}&quot;)
+
+
+</code></pre>
+<h1 id="loop-through-a-range-in-reverse">Loop through a range in reverse</h1>
+<pre><code>for i in reversed(range(5)):
+    print(f&quot;Loop in reverse, i: {i}&quot;)
+
+
+</code></pre>
+<h1 id="nested-loops-to-create-a-matrix">Nested loops to create a matrix</h1>
+<pre><code>matrix = [[i * j for j in range(3)] for i in range(3)]
+print(f&quot;Nested loop for matrix: {matrix}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-multiple-conditions">Loop with multiple conditions</h1>
+<pre><code>for i in range(10):
+    if i % 2 == 0 and i % 3 == 0:
+        print(f&quot;Loop with multiple conditions, i: {i}&quot;)
+
+
+</code></pre>
+<h1 id="using-a-loop-to-flatten-a-list-of-lists">Using a loop to flatten a list of lists</h1>
+<pre><code>list_of_lists = [[1, 2, 3], [4, 5], [6, 7, 8]]
+flattened_list = [item for sublist in list_of_lists for item in sublist]
+print(f&quot;Flattened list: {flattened_list}&quot;)
+
+
+</code></pre>
+<h1 id="looping-over-two-ranges-simultaneously">Looping over two ranges simultaneously</h1>
+<pre><code>for i, j in zip(range(3), range(10, 13)):
+    print(f&quot;Loop over two ranges, i: {i}, j: {j}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-set">Loop with a set</h1>
+<pre><code>
+unique_numbers = {1, 2, 3, 4, 5}
+for number in unique_numbers:
+    print(f&quot;Loop with set, number: {number}&quot;)
+
+</code></pre>
+<h1 id="loop-with-a-tuple">Loop with a tuple</h1>
+<pre><code>
+tuple_values = (10, 20, 30)
+for value in tuple_values:
+    print(f&quot;Loop with tuple, value: {value}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-boolean-condition">Loop with a boolean condition</h1>
+<pre><code>
+i = 0
+while i &lt; 5:
+    print(f&quot;Loop with boolean condition, i: {i}&quot;)
+    i += 1
+
+
+</code></pre>
+<h1 id="nested-loops-with-multiple-levels">Nested loops with multiple levels</h1>
+<pre><code>
+for i in range(2):
+    for j in range(2):
+        for k in range(2):
+            print(f&quot;Nested loops with multiple levels, i: {i}, j: {j}, k: {k}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-range-step">Loop with a range step</h1>
+<pre><code>
+for i in range(0, 10, 2):
+    print(f&quot;Loop with range step, i: {i}&quot;)
+
+
+</code></pre>
+<h1 id="using-a-loop-to-create-a-set-set-comprehension">Using a loop to create a set (set comprehension)</h1>
+<pre><code>
+squares_set = {x ** 2 for x in range(5)}
+print(f&quot;Set comprehension, squares_set: {squares_set}&quot;)
+
+
+</code></pre>
+<h1 id="using-a-loop-to-create-a-generator-generator-comprehension">Using a loop to create a generator (generator comprehension)</h1>
+<pre><code>
+squares_gen = (x ** 2 for x in range(5))
+print(f&quot;Generator comprehension, squares_gen: {list(squares_gen)}&quot;)
+
+
+</code></pre>
+<h1 id="using-a-loop-to-filter-a-list">Using a loop to filter a list</h1>
+<pre><code>
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = [x for x in numbers if x % 2 == 0]
+print(f&quot;Filtered list, even_numbers: {even_numbers}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-try-except">Loop with try-except</h1>
+<pre><code>
+for i in range(5):
+    try:
+        result = 10 / i
+    except ZeroDivisionError:
+        result = &quot;undefined&quot;
+    print(f&quot;Loop with try-except, i: {i}, result: {result}&quot;)
+
+
+</code></pre>
+<h1 id="looping-over-multiple-lists-simultaneously">Looping over multiple lists simultaneously</h1>
+<pre><code>
+names = [&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;]
+scores = [85, 90, 95]
+for name, score in zip(names, scores):
+    print(f&quot;Loop over multiple lists, name: {name}, score: {score}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-countdown">Loop with a countdown</h1>
+<pre><code>
+for i in range(5, 0, -1):
+    print(f&quot;Countdown loop, i: {i}&quot;)
+
+
+</code></pre>
+<h1 id="using-a-loop-to-check-for-prime-numbers">Using a loop to check for prime numbers</h1>
+<pre><code>
+for num in range(2, 10):
+    for i in range(2, num):
+        if num % i == 0:
+            break
+    else:
+        print(f&quot;Prime number found: {num}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-complex-condition">Loop with a complex condition</h1>
+<pre><code>
+for i in range(10):
+    if i % 2 == 0 or i % 3 == 0:
+        print(f&quot;Loop with complex condition, i: {i}&quot;)
+
+
+</code></pre>
+<h1 id="using-a-loop-to-find-the-maximum-value-in-a-list">Using a loop to find the maximum value in a list</h1>
+<pre><code>
+numbers = [1, 3, 2, 8, 5, 10]
+max_value = numbers[0]
+for number in numbers:
+    if number &gt; max_value:
+        max_value = number
+print(f&quot;Maximum value in list: {max_value}&quot;)
+
+
+</code></pre>
+<h1 id="using-a-loop-to-reverse-a-string">Using a loop to reverse a string</h1>
+<pre><code>
+original_string = &quot;hello&quot;
+reversed_string = &quot;&quot;
+for char in original_string:
+    reversed_string = char + reversed_string
+print(f&quot;Reversed string: {reversed_string}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-nested-function">Loop with a nested function</h1>
+<pre><code>
+def nested_function(x):
+    return x ** 2
+
+for i in range(5):
+    result = nested_function(i)
+    print(f&quot;Loop with nested function, i: {i}, result: {result}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-map-function">Loop with a map function</h1>
+<pre><code>
+numbers = [1, 2, 3, 4, 5]
+squares = list(map(lambda x: x ** 2, numbers))
+print(f&quot;Loop with map function, squares: {squares}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-filter-function">Loop with a filter function</h1>
+<pre><code>
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(f&quot;Loop with filter function, even_numbers: {even_numbers}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-reduce-function">Loop with a reduce function</h1>
+<pre><code>
+from functools import reduce
+numbers = [1, 2, 3, 4, 5]
+sum_of_numbers = reduce(lambda x, y: x + y, numbers)
+print(f&quot;Loop with reduce function, sum_of_numbers: {sum_of_numbers}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-enumerate-and-a-start-index">Loop with enumerate and a start index</h1>
+<pre><code>
+names = [&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;]
+for index, name in enumerate(names, start=1):
+    print(f&quot;Loop with enumerate and start index, index: {index}, name: {name}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-custom-iterator">Loop with a custom iterator</h1>
+<pre><code>
+class Countdown:
+    def __init__(self, start):
+        self.start = start
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.start &lt;= 0:
+            raise StopIteration
+        self.start -= 1
+        return self.start + 1
+
+for count in Countdown(5):
+    print(f&quot;Loop with custom iterator, count: {count}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-generator-function">Loop with a generator function</h1>
+<pre><code>
+def countdown_generator(n):
+    while n &gt; 0:
+        yield n
+        n -= 1
+
+for count in countdown_generator(5):
+    print(f&quot;Loop with generator function, count: {count}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-list-of-tuples">Loop with a list of tuples</h1>
+<pre><code>
+tuple_list = [(1, 2), (3, 4), (5, 6)]
+for a, b in tuple_list:
+    print(f&quot;Loop with list of tuples, a: {a}, b: {b}&quot;)
+
+
+</code></pre>
+<h1 id="loop-to-find-the-minimum-value-in-a-list">Loop to find the minimum value in a list</h1>
+<pre><code>
+numbers = [1, 3, 2, 8, 5, 10]
+min_value = numbers[0]
+for number in numbers:
+    if number &lt; min_value:
+        min_value = number
+print(f&quot;Minimum value in list: {min_value}&quot;)
+
+
+</code></pre>
+<h1 id="loop-to-calculate-the-factorial-of-a-number">Loop to calculate the factorial of a number</h1>
+<pre><code>
+n = 5
+factorial = 1
+for i in range(1, n + 1):
+    factorial *= i
+print(f&quot;Factorial of {n}: {factorial}&quot;)
+
+
+</code></pre>
+<h1 id="loop-to-calculate-the-fibonacci-sequence">Loop to calculate the Fibonacci sequence</h1>
+<pre><code>
+n = 10
+a, b = 0, 1
+fib_sequence = []
+for _ in range(n):
+    fib_sequence.append(a)
+    a, b = b, a + b
+print(f&quot;Fibonacci sequence: {fib_sequence}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-dictionary-comprehension">Loop with dictionary comprehension</h1>
+<pre><code>
+squares_dict = {x: x ** 2 for x in range(5)}
+print(f&quot;Dictionary comprehension, squares_dict: {squares_dict}&quot;)
+
+</code></pre>
+<h1 id="loop-to-remove-duplicates-from-a-list">Loop to remove duplicates from a list</h1>
+<pre><code>
+numbers = [1, 2, 2, 3, 4, 4, 5]
+unique_numbers = []
+for number in numbers:
+    if number not in unique_numbers:
+        unique_numbers.append(number)
+print(f&quot;List without duplicates: {unique_numbers}&quot;)
+
+
+</code></pre>
+<h1 id="loop-to-transpose-a-matrix">Loop to transpose a matrix</h1>
+<pre><code>
+matrix = [[1, 2, 3], [4, 5, 6]]
+transposed_matrix = []
+for i in range(len(matrix[0])):
+    transposed_matrix.append([row[i] for row in matrix])
+print(f&quot;Transposed matrix: {transposed_matrix}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-string-formatting">Loop with string formatting</h1>
+<pre><code>
+names = [&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;]
+for index, name in enumerate(names):
+    print(f&quot;Person {index + 1}: {name}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-set-comprehension">Loop with a set comprehension</h1>
+<pre><code>
+squares_set = {x ** 2 for x in range(5)}
+print(f&quot;Set comprehension, squares_set: {squares_set}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-generator-expression">Loop with a generator expression</h1>
+<pre><code>
+squares_gen = (x ** 2 for x in range(5))
+print(f&quot;Generator expression, squares_gen: {list(squares_gen)}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-list-slicing">Loop with list slicing</h1>
+<pre><code>
+numbers = [1, 2, 3, 4, 5]
+for number in numbers[::-1]:
+    print(f&quot;Loop with list slicing, number: {number}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-list-slicing-to-reverse">Loop with list slicing to reverse</h1>
+<pre><code>
+numbers = [1, 2, 3, 4, 5]
+reversed_numbers = numbers[::-1]
+print(f&quot;Reversed list with slicing: {reversed_numbers}&quot;)
+
+
+</code></pre>
+<h1 id="loop-with-a-step-size-in-range">Loop with a step size in range</h1>
+<pre><code>
+for i in range(0, 10, 2):
+    print(f&quot;Loop with step size in range, i: {i}&quot;)
+</code></pre>
+<h1 id="loop-to-merge-two-lists">Loop to merge two lists</h1>
+<pre><code>
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+merged_list = []
+for a, b in zip(list1, list2):
+    merged_list.append(a)
+    merged_list.append(b)
+print(f&quot;Merged list: {merged_list}&quot;)
+
+</code></pre>
+<h1 id="loop-to-find-common-elements-in-two-lists">Loop to find common elements in two lists</h1>
+<pre><code>
+list1 = [1, 2, 3, 4]
+list2 = [3, 4, 5, 6]
+common_elements = [x for x in list1 if x in list2]
+print(f&quot;Common elements in two lists: {common_elements}&quot;)
+
+</code></pre>
+<h1 id="loop-to-calculate-the-power-of-numbers">Loop to calculate the power of numbers</h1>
+<pre><code>
+numbers = [1, 2, 3, 4, 5]
+powers = [x ** 2 for x in numbers]
+print(f&quot;Powers of numbers: {powers}&quot;)
+
+</code></pre>
+<h1 id="loop-to-separate-even-and-odd-numbers">Loop to separate even and odd numbers</h1>
+<pre><code>
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = []
+odd_numbers = []
+for number in numbers:
+    if number % 2 == 0:
+        even_numbers.append(number)
+    else:
+        odd_numbers.append(number)
+print(f&quot;Even numbers: {even_numbers}&quot;)
+print(f&quot;Odd numbers: {odd_numbers}&quot;)
+</code></pre>
+<h1 id="loop-to-create-a-list-of-tuples">Loop to create a list of tuples</h1>
+<pre><code>
+tuple_list = [(x, x ** 2) for x in range(5)]
+print(f&quot;List of tuples: {tuple_list}&quot;)
+</code></pre>
+<h1 id="loop-to-calculate-the-sum-of-digits-of-a-number">Loop to calculate the sum of digits of a number</h1>
+<pre><code>
+number = 12345
+sum_of_digits = 0
+for digit in str(number):
+    sum_of_digits += int(digit)
+print(f&quot;Sum of digits: {sum_of_digits}&quot;)
+</code></pre>
+<h1 id="loop-to-create-a-multiplication-table">Loop to create a multiplication table</h1>
+<pre><code>
+n = 5
+multiplication_table = [[i * j for j in range(1, n + 1)] for i in range(1, n + 1)]
+print(f&quot;Multiplication table:&quot;)
+for row in multiplication_table:
+    print(row)
+</code></pre>
+<h1 id="loop-to-find-the-length-of-a-string">Loop to find the length of a string</h1>
+<pre><code>
+string = &quot;Hello, world!&quot;
+length = 0
+for _ in string:
+    length += 1
+print(f&quot;Length of the string: {length}&quot;)
+</code></pre>
+<h1 id="loop-to-count-the-occurrences-of-a-character-in-a-string">Loop to count the occurrences of a character in a string</h1>
+<pre><code>
+string = &quot;hello world&quot;
+char = 'l'
+count = 0
+for c in string:
+    if c == char:
+        count += 1
+print(f&quot;Occurrences of '{char}' in the string: {count}&quot;)
+
+</code></pre>
+<h1 id="loop-to-find-the-index-of-an-element-in-a-list">Loop to find the index of an element in a list</h1>
+<pre><code>
+numbers = [10, 20, 30, 40, 50]
+target = 30
+for index, number in enumerate(numbers):
+    if number == target:
+        print(f&quot;Index of {target} in the list: {index}&quot;)
+        break
+</code></pre>
+<h1 id="loop-to-find-the-maximum-value-in-a-list-of-tuples">Loop to find the maximum value in a list of tuples</h1>
+<pre><code>
+tuple_list = [(1, 2), (3, 4), (5, 6)]
+max_value = max(tuple_list, key=lambda x: x[1])
+print(f&quot;Maximum value in list of tuples: {max_value}&quot;)
+</code></pre>
+<h1 id="loop-to-find-the-common-characters-in-two-strings">Loop to find the common characters in two strings</h1>
+<pre><code>
+string1 = &quot;hello&quot;
+string2 = &quot;world&quot;
+common_chars = [char for char in string1 if char in string2]
+print(f&quot;Common characters in strings: {common_chars}&quot;)
+</code></pre>
+<h1 id="loop-to-create-a-dictionary-of-counts-of-elements-in-a-list">Loop to create a dictionary of counts of elements in a list</h1>
+<pre><code>
+numbers = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+counts = {}
+for number in numbers:
+    if number in counts:
+        counts[number] += 1
+    else:
+        counts[number] = 1
+print(f&quot;Dictionary of counts: {counts}&quot;)
+
+</code></pre>
+<h1 id="loop-to-create-a-list-of-prime-numbers">Loop to create a list of prime numbers</h1>
+<pre><code>
+prime_numbers = []
+for num in range(2, 20):
+    for i in range(2, num):
+        if num % i == 0:
+            break
+    else:
+        prime_numbers.append(num)
+print(f&quot;List of prime numbers: {prime_numbers}&quot;)
+</code></pre>
+<h1 id="loop-to-calculate-the-sum-of-elements-in-a-nested-list">Loop to calculate the sum of elements in a nested list</h1>
+<pre><code>
+nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+total_sum = 0
+for sublist in nested_list:
+    for item in sublist:
+        total_sum += item
+print(f&quot;Sum of elements in nested list: {total_sum}&quot;)
+
+</code></pre>
+<h1 id="loop-to-count-the-number-of-vowels-in-a-string">Loop to count the number of vowels in a string</h1>
+<pre><code>
+string = &quot;hello world&quot;
+vowels = &quot;aeiou&quot;
+vowel_count = 0
+for char in string:
+    if char in vowels:
+        vowel_count += 1
+print(f&quot;Number of vowels in string: {vowel_count}&quot;)
+
+</code></pre>
+<h1 id="loop-to-find-the-intersection-of-two-sets">Loop to find the intersection of two sets</h1>
+<pre><code>
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+intersection = set1 &amp; set2
+print(f&quot;Intersection of sets: {intersection}&quot;)
+
+</code></pre>
+<h1 id="loop-to-find-the-difference-of-two-sets">Loop to find the difference of two sets</h1>
+<pre><code>
+difference = set1 - set2
+print(f&quot;Difference of sets: {difference}&quot;)
+</code></pre>
+<h1 id="loop-to-find-the-symmetric-difference-of-two-sets">Loop to find the symmetric difference of two sets</h1>
+<pre><code>
+symmetric_difference = set1 ^ set2
+print(f&quot;Symmetric difference of sets: {symmetric_difference}&quot;)
+</code></pre>
+<h1 id="loop-to-count-the-occurrences-of-words-in-a-string">Loop to count the occurrences of words in a string</h1>
+<pre><code>
+string = &quot;hello hello world&quot;
+words = string.split()
+word_counts = {}
+for word in words:
+    if word in word_counts:
+        word_counts[word] += 1
+    else:
+        word_counts[word] = 1
+print(f&quot;Word counts: {word_counts}&quot;)
+
+</code></pre>
+<h1 id="loop-to-create-a-list-of-even-numbers-from-1-to-20">Loop to create a list of even numbers from 1 to 20</h1>
+<pre><code>
+even_numbers = [x for x in range(1, 21) if x % 2 == 0]
+print(f&quot;List of even numbers: {even_numbers}&quot;)
+
+</code></pre>
+<h1 id="loop-to-create-a-list-of-odd-numbers-from-1-to-20">Loop to create a list of odd numbers from 1 to 20</h1>
+<pre><code>
+odd_numbers = [x for x in range(1, 21) if x % 2 != 0]
+print(f&quot;List of odd numbers: {odd_numbers}&quot;)
+</code></pre>
+<h1 id="loop-to-create-a-list-of-squares-of-numbers-from-1-to-10">Loop to create a list of squares of numbers from 1 to 10</h1>
+<pre><code>
+squares = [x ** 2 for x in range(1, 11)]
+print(f&quot;Squares of numbers from 1 to 10: {squares}&quot;)
+
+</code></pre>
+<h1 id="loop-to-find-the-sum-of-squares-of-numbers-from-1-to-10">Loop to find the sum of squares of numbers from 1 to 10</h1>
+<pre><code>
+sum_of_squares = sum(x ** 2 for x in range(1, 11))
+print(f&quot;Sum of squares from 1 to 10: {sum_of_squares}&quot;)
+</code></pre>
+<h1 id="loop-to-find-the-factorial-of-a-number-using-recursion">Loop to find the factorial of a number using recursion</h1>
+<pre><code>
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(f&quot;Factorial of 5 using recursion: {factorial(5)}&quot;)
+
+</code></pre>
+<h1 id="loop-to-find-the-greatest-common-divisor-gcd-of-two-numbers">Loop to find the greatest common divisor (GCD) of two numbers</h1>
+<pre><code>
+a, b = 48, 18
+while b:
+    a, b = b, a % b
+print(f&quot;GCD of 48 and 18: {a}&quot;)
+</code></pre>
+<h1 id="loop-to-find-the-least-common-multiple-lcm-of-two-numbers">Loop to find the least common multiple (LCM) of two numbers</h1>
+<pre><code>
+a, b = 48, 18
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+lcm = (a * b) // gcd(a, b)
+print(f&quot;LCM of 48 and 18: {lcm}&quot;)
+</code></pre>
+<h1 id="loop-to-create-a-dictionary-from-two-lists">Loop to create a dictionary from two lists</h1>
+<pre><code>
+keys = [&quot;name&quot;, &quot;age&quot;, &quot;city&quot;]
+values = [&quot;Alice&quot;, 30, &quot;New York&quot;]
+dictionary = dict(zip(keys, values))
+print(f&quot;Dictionary from two lists: {dictionary}&quot;)
+
+</code></pre>
+<h1 id="loop-to-find-the-longest-word-in-a-string">Loop to find the longest word in a string</h1>
+<pre><code>
+string = &quot;hello world this is a test&quot;
+words = string.split()
+longest_word = max(words, key=len)
+print(f&quot;Longest word in string: {longest_word}&quot;)
+
+</code></pre>
+<h1 id="loop-to-find-the-shortest-word-in-a-string">Loop to find the shortest word in a string</h1>
+<pre><code>
+shortest_word = min(words, key=len)
+print(f&quot;Shortest word in string: {shortest_word}&quot;)
+</code></pre>
+<h1 id="loop-to-find-the-sum-of-odd-numbers-from-1-to-10">Loop to find the sum of odd numbers from 1 to 10</h1>
+<pre><code>
+sum_of_odds = sum(x for x in range(1, 11) if x % 2 != 0)
+print(f&quot;Sum of odd numbers from 1 to 10: {sum_of_odds}&quot;)
+
+</code></pre>
+<h1 id="loop-to-find-the-product-of-even-numbers-from-1-to-10">Loop to find the product of even numbers from 1 to 10</h1>
+<pre><code>
+product_of_evens = 1
+for x in range(1, 11):
+    if x % 2 == 0:
+        product_of_evens *= x
+print(f&quot;Product of even numbers from 1 to 10: {product_of_evens}&quot;)
+
+</code></pre>
+<h1 id="loop-to-create-a-dictionary-of-squares-of-numbers-from-1-to-5">Loop to create a dictionary of squares of numbers from 1 to 5</h1>
+<pre><code>
+squares_dict = {x: x ** 2 for x in range(1, 6)}
+print(f&quot;Dictionary of squares: {squares_dict}&quot;)
+</code></pre>
+<h1 id="loop-to-create-a-list-of-cubes-of-numbers-from-1-to-5">Loop to create a list of cubes of numbers from 1 to 5</h1>
+<pre><code>
+cubes = [x ** 3 for x in range(1, 6)]
+print(f&quot;List of cubes: {cubes}&quot;)
+
+</code></pre>
+<h1 id="loop-to-find-the-sum-of-cubes-of-numbers-from-1-to-5">Loop to find the sum of cubes of numbers from 1 to 5</h1>
+<pre><code>
+sum_of_cubes = sum(x ** 3 for x in range(1, 6))
+print(f&quot;Sum of cubes: {sum_of_cubes}&quot;)
+
+</code></pre>
+<h1 id="loop-to-create-a-list-of-factorials-from-1-to-5">Loop to create a list of factorials from 1 to 5</h1>
+<pre><code>
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+factorials = [factorial(x) for x in range(1, 6)]
+print(f&quot;List of factorials: {factorials}&quot;)
+
+</code></pre>
+<h1 id="loop-to-find-the-sum-of-factorials-from-1-to-5">Loop to find the sum of factorials from 1 to 5</h1>
+<pre><code>
+sum_of_factorials = sum(factorials)
+print(f&quot;Sum of factorials: {sum_of_factorials}&quot;)
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc", "navigation.tabs"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

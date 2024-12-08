@@ -1,0 +1,668 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Your resource for Python programs, quizzes, and interview prep.">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+    
+    
+      
+        <title>django resetAPI - Weekly Python Code</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#step-1-set-up-your-django-project" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Weekly Python Code" class="md-header__button md-logo" aria-label="Weekly Python Code" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Weekly Python Code
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              django resetAPI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../programs/" class="md-tabs__link">
+        
+  
+    
+  
+  Programs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quizzes/" class="md-tabs__link">
+        
+  
+    
+  
+  Quizzes
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../interview/" class="md-tabs__link">
+        
+  
+    
+  
+  Interview Prep
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Weekly Python Code" class="md-nav__button md-logo" aria-label="Weekly Python Code" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Weekly Python Code
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quizzes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quizzes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interview Prep
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-set-up-your-django-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Set Up Your Django Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-create-your-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Create Your Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-create-serializers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Create Serializers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Create Views
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-configure-urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Configure URLs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-test-your-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Test Your API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Configurations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-settingspy-for-rest-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example settings.py for REST Framework
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>django resetAPI</h1>
+
+<p>Creating a REST API with Django involves several steps, including setting up your Django project, installing and configuring Django REST framework, creating your models, serializers, views, and configuring URLs. Here’s a step-by-step guide to help you through the process:</p>
+<h3 id="step-1-set-up-your-django-project">Step 1: Set Up Your Django Project</h3>
+<ol>
+<li>
+<p><strong>Install Django and Django REST Framework</strong>:
+   First, you need to install Django and Django REST framework if you haven't already.
+   <code>bash
+   pip install django djangorestframework</code></p>
+</li>
+<li>
+<p><strong>Create a Django Project</strong>:
+   <code>bash
+   django-admin startproject myproject
+   cd myproject</code></p>
+</li>
+<li>
+<p><strong>Create a Django App</strong>:
+   <code>bash
+   python manage.py startapp myapp</code></p>
+</li>
+<li>
+<p><strong>Add the App and REST Framework to <code>settings.py</code></strong>:
+   In <code>myproject/settings.py</code>, add <code>'rest_framework'</code> and your app to the <code>INSTALLED_APPS</code> list.
+   <code>python
+   INSTALLED_APPS = [
+       ...
+       'rest_framework',
+       'myapp',
+   ]</code></p>
+</li>
+</ol>
+<h3 id="step-2-create-your-models">Step 2: Create Your Models</h3>
+<ol>
+<li><strong>Define Models</strong>:
+   Open <code>myapp/models.py</code> and define your models. For example:
+   ```python
+   from django.db import models</li>
+</ol>
+<p>class Item(models.Model):
+       name = models.CharField(max_length=100)
+       description = models.TextField()
+       created_at = models.DateTimeField(auto_now_add=True)</p>
+<pre><code>   def __str__(self):
+       return self.name
+</code></pre>
+<p>```</p>
+<ol>
+<li><strong>Run Migrations</strong>:
+   <code>bash
+   python manage.py makemigrations
+   python manage.py migrate</code></li>
+</ol>
+<h3 id="step-3-create-serializers">Step 3: Create Serializers</h3>
+<ol>
+<li><strong>Define Serializers</strong>:
+   Create a file named <code>serializers.py</code> in your app directory and define your serializers. For example:
+   ```python
+   from rest_framework import serializers
+   from .models import Item</li>
+</ol>
+<p>class ItemSerializer(serializers.ModelSerializer):
+       class Meta:
+           model = Item
+           fields = '<strong>all</strong>'
+   ```</p>
+<h3 id="step-4-create-views">Step 4: Create Views</h3>
+<ol>
+<li><strong>Define Views</strong>:
+   Open <code>myapp/views.py</code> and define your API views. For example:
+   ```python
+   from rest_framework import generics
+   from .models import Item
+   from .serializers import ItemSerializer</li>
+</ol>
+<p>class ItemListCreate(generics.ListCreateAPIView):
+       queryset = Item.objects.all()
+       serializer_class = ItemSerializer</p>
+<p>class ItemDetail(generics.RetrieveUpdateDestroyAPIView):
+       queryset = Item.objects.all()
+       serializer_class = ItemSerializer
+   ```</p>
+<h3 id="step-5-configure-urls">Step 5: Configure URLs</h3>
+<ol>
+<li><strong>Define URLs</strong>:
+   Create a file named <code>urls.py</code> in your app directory and define your URL patterns. For example:
+   ```python
+   from django.urls import path
+   from .views import ItemListCreate, ItemDetail</li>
+</ol>
+<p>urlpatterns = [
+       path('items/', ItemListCreate.as_view(), name='item-list-create'),
+       path('items/<int:pk>/', ItemDetail.as_view(), name='item-detail'),
+   ]
+   ```</p>
+<ol>
+<li><strong>Include App URLs in Project URLs</strong>:
+   Open <code>myproject/urls.py</code> and include your app URLs.
+   ```python
+   from django.contrib import admin
+   from django.urls import path, include</li>
+</ol>
+<p>urlpatterns = [
+       path('admin/', admin.site.urls),
+       path('api/', include('myapp.urls')),
+   ]
+   ```</p>
+<h3 id="step-6-test-your-api">Step 6: Test Your API</h3>
+<ol>
+<li>
+<p><strong>Run the Development Server</strong>:
+   <code>bash
+   python manage.py runserver</code></p>
+</li>
+<li>
+<p><strong>Test Endpoints</strong>:
+   You can use tools like Postman or cURL to test your API endpoints. For example:</p>
+</li>
+<li>To list items: <code>GET http://127.0.0.1:8000/api/items/</code></li>
+<li>To create an item: <code>POST http://127.0.0.1:8000/api/items/</code></li>
+<li>To retrieve an item: <code>GET http://127.0.0.1:8000/api/items/&lt;id&gt;/</code></li>
+<li>To update an item: <code>PUT http://127.0.0.1:8000/api/items/&lt;id&gt;/</code></li>
+<li>To delete an item: <code>DELETE http://127.0.0.1:8000/api/items/&lt;id&gt;/</code></li>
+</ol>
+<h3 id="additional-configurations">Additional Configurations</h3>
+<ol>
+<li>
+<p><strong>Set Up Permissions</strong>:
+   You can configure permissions in your views to control access.</p>
+</li>
+<li>
+<p><strong>Add Authentication</strong>:
+   Add authentication mechanisms as needed, such as token-based authentication.</p>
+</li>
+<li>
+<p><strong>Pagination</strong>:
+   Configure pagination settings in <code>settings.py</code> if your API requires it.</p>
+</li>
+</ol>
+<h3 id="example-settingspy-for-rest-framework">Example <code>settings.py</code> for REST Framework</h3>
+<pre><code class="language-python">REST_FRAMEWORK = {
+   'DEFAULT_PERMISSION_CLASSES': [
+       'rest_framework.permissions.AllowAny',
+   ],
+   'DEFAULT_AUTHENTICATION_CLASSES': [
+       'rest_framework.authentication.SessionAuthentication',
+       'rest_framework.authentication.BasicAuthentication',
+   ],
+   'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+   'PAGE_SIZE': 10
+}
+</code></pre>
+<p>This is a basic setup to get you started with Django and Django REST framework for creating a REST API. You can further customize it based on your specific requirements.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc", "navigation.tabs"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
