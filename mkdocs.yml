@@ -1,0 +1,14 @@
+site_name: Weekly Python Code
+site_description: Your resource for Python programs, quizzes, and interview prep.
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: amber
+plugins:
+  - search
+nav:
+  - Home: index.md
+  - Programs: programs.md
+  - Quizzes: quizzes.md
+  - Interview Prep: interview.md
