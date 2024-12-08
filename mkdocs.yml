@@ -1,20 +1,56 @@
 site_name: Weekly Python Code
-site_description: Your resource for Python programs, quizzes, and interview prep.
 theme:
   name: material
-  palette:
-    primary: blue
-    accent: amber
-  features:
-    - toc
-    - navigation.tabs
+  toc:
+    menu: false
 
-plugins:
-  - search
+  palette:
+    primary: 'indigo'
+    accent: 'amber'
+  dark_mode: true  # Enable dark mode
   
+  # To enable top navbar layout
+  font:
+    text: 'Roboto'
+    code: 'Source Code Pro'
+
+  # This enables the top navigation bar (not sidebar)
+  icon:
+    logo: 'assets/images/logo.png'  # Optional: Add a logo to the navbar
+  logo: 'assets/images/logo.png'  # Optional: Add a logo to the navbar
+  
+  # Enable the top bar menu (global navigation)
+  features:
+    - navigation.tabs
+    - navigation.expand
 
 nav:
   - Home: index.md
-  - Programs: programs.md
-  - Quizzes: quizzes.md
-  - Interview Prep: interview.md
+  - Python Tutorials:
+      - Basics: tutorials/basics.md
+      - Intermediate: tutorials/intermediate.md
+      - Advanced: tutorials/advanced.md
+  - Interviews:
+      - Questions: interviews/questions.md
+      - Solutions: interviews/solutions.md
+  - Quizzes:
+      - Quiz 1: quizzes/quiz1.md
+      - Quiz 2: quizzes/quiz2.md
+  - About: about.md  # Optional: An "About" page or other section
+  - Contact: contact.md  # Optional: Contact page or section
+  
+plugins:
+  - search
+  - awesome-pages
+  - git-revision-date
+
+extra:
+  social:
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/yourusername/yourrepo'
+    - icon: 'fontawesome/brands/twitter'
+      link: 'https://twitter.com/yourhandle'
+  description: 'A collection of Python tutorials, quizzes, and interview solutions.'
+  keywords: ['python', 'programming', 'tutorials', 'interviews', 'learning']
+
+
