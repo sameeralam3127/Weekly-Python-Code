@@ -5,8 +5,15 @@ theme:
   palette:
     primary: blue
     accent: amber
+  features:
+    - toc
+    - navigation.tabs
+
 plugins:
   - search
+  - awesome-pages
+  
+
 nav:
   - Home: index.md
   - Programs: programs.md

@@ -1,3 +1,12 @@
-# Python Programs
+# Weekly Python Programs
 
-Discover weekly Python programs to practice and enhance your skills.
+## Table of Contents
+- [Basic Programs](#basic-programs)
+- [Advanced Programs](#advanced-programs)
+
+## Basic Programs
+- [Hello World](#hello-world)
+- [Factorial](#factorial)
+
+## Advanced Programs
+- [Sorting Algorithms](#sorting-algorithms)
