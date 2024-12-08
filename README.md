@@ -1,4 +1,3 @@
-```markdown
 # Weekly Python Code
 
 This repository is dedicated to collecting and sharing Python programming exercises, quizzes, learning resources, and interview questions and solutions. The goal is to provide a resource for Python learners to practice coding and improve their skills.
@@ -18,6 +17,7 @@ To get started with this project, clone the repository to your local machine:
 ```bash
 git clone https://github.com/sameeralam3127/Weekly-Python-Code.git
 cd Weekly-Python-Code
+
 ```
 
 ### Set up a Python Environment
@@ -112,18 +112,9 @@ This repository is deployed using **GitHub Pages** via MkDocs. The site is autom
 
 You can view the live site here: [Your Site URL](https://sameeralam3127.github.io/Weekly-Python-Code/)
 
-## License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-```
 
-### Key Sections in the `README.md`:
-
-1. **Getting Started**: This section provides instructions on how to clone the repository, set up the environment, install dependencies, and serve the site locally.
-2. **How to Contribute**: Provides guidelines for contributing, including forking, creating branches, making changes, committing, and creating pull requests.
-3. **Deployment**: Describes how the project is deployed using GitHub Pages and GitHub Actions.
-4. **License**: Information about the project’s license. The example uses the MIT License, but you can adjust this depending on your preference.
 
 
 
