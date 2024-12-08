@@ -30,14 +30,6 @@ nav:
       - Basics: tutorials/basics.md
       - Intermediate: tutorials/intermediate.md
       - Advanced: tutorials/advanced.md
-  - Interviews:
-      - Questions: interviews/questions.md
-      - Solutions: interviews/solutions.md
-  - Quizzes:
-      - Quiz 1: quizzes/quiz1.md
-      - Quiz 2: quizzes/quiz2.md
-  - About: about.md  # Optional: An "About" page or other section
-  - Contact: contact.md  # Optional: Contact page or section
   
 plugins:
   - search
