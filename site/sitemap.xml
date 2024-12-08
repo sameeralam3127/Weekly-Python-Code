@@ -1,3 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://sameeralam3127.github.io/Weekly-Python-Code/</loc>
+         <lastmod>2024-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://sameeralam3127.github.io/Weekly-Python-Code/blog/</loc>
+         <lastmod>2024-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://sameeralam3127.github.io/Weekly-Python-Code/programs/100%20Python%20programming%20questions/</loc>
+         <lastmod>2024-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://sameeralam3127.github.io/Weekly-Python-Code/tutorials/advanced/</loc>
+         <lastmod>2024-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://sameeralam3127.github.io/Weekly-Python-Code/tutorials/basics/</loc>
+         <lastmod>2024-12-08</lastmod>
+    </url>
+    <url>
+         <loc>https://sameeralam3127.github.io/Weekly-Python-Code/tutorials/intermediate/</loc>
+         <lastmod>2024-12-08</lastmod>
+    </url>
 </urlset>
