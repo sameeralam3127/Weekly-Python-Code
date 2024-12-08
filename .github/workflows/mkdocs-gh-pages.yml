@@ -1,0 +1,51 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches: 
+      - main  # Trigger deployment when changes are pushed to the 'main' branch
+  workflow_dispatch:  # Allows you to manually trigger the workflow from GitHub Actions tab
+
+permissions:
+  contents: read  # Required to read the content of the repository
+  pages: write  # Required to deploy the site to GitHub Pages
+  id-token: write  # Needed for GitHub Pages deployment authentication
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false  # Allow production deployments to complete without canceling in-progress runs
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # You can also use windows-latest or macos-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  # Checks out the repository code
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4  # Sets up the Python environment
+        with:
+          python-version: '3.x'  # You can use a specific version like 3.9 or 3.8 if needed
+
+      - name: Install MkDocs and dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin  # Install MkDocs, Material theme, and awesome-pages plugin
+
+      - name: Build MkDocs site
+        run: mkdocs build --strict  # Builds the MkDocs site and outputs to the 'site' directory
+
+      - name: Upload artifact (MkDocs build)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site  # Specifies the directory to upload (default MkDocs output directory)
+
+  deploy:
+    runs-on: ubuntu-latest  # Same as build job
+    needs: build  # Ensure the build job is completed before deploying
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4  # Deploys the built site to GitHub Pages
+        with:
+          artifact_path: ./site  # Specifies the path to the built site
